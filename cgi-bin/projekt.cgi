@@ -22,7 +22,7 @@ print(f"""
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet"
-          href="./Betriebssysteme-Webcomputing-Semesterabgabe/css/main.css">
+          href="../Betriebssysteme-Webcomputing-Semesterabgabe/css/main.css">
 </head>
 <body>
 
