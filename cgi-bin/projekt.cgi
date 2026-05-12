@@ -4,7 +4,8 @@ import cgi
 
 form = cgi.FieldStorage()
 matrikelnummer = form.getvalue("Matrikelnummer")
-
+studiengang = form.getvalue("Studiengang")
+semester = form.getvalue("Semester")
 print("Content-type: text/html")
 print()
 
@@ -21,8 +22,9 @@ print(f"""
 
 <ul>
     <li>Matrikelnummer: {matrikelnummer}</li>
-
-  </ul>
+    <li>Stduiengang: {studiengang}</li>
+    <li>Semester: {semester}</li>  
+</ul>
 
 </body>
 </html>
