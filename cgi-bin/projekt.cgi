@@ -6,7 +6,7 @@ form = cgi.FieldStorage()
 matrikelnummer = form.getvalue("Matrikelnummer")
 studiengang = form.getvalue("Studiengang")
 semester = form.getvalue("Semester")
-studienart = form.getvalue("studienart")
+studienart = form.getvalue("Studienart")
 print("Content-type: text/html")
 print()
 
