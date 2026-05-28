@@ -144,7 +144,14 @@ if studienart == "Bachelor":
 
 module_html = ""
 
-for modul in module:
+if len(module) == 0:
+  module_html = """
+    <li class="list-group-item text-danger">
+        Keine Module gefunden
+    </li>
+    """
+else:
+  for modul in module:
     module_html += f"""
     <li class="list-group-item">
         {modul}
