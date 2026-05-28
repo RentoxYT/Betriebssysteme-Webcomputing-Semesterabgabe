@@ -1,13 +1,156 @@
 #!/usr/bin/python3
 
 import cgi
+ba_applied_computer_science_1 = ["Einführung in die Informationsverarbeitung", "Einführung in die Praktische Informatik", "Rechnerorganisation", "Mediengestaltung", "Mathematik 1", "Englisch", "Projektorientiertes Studium"]
+ba_applied_computer_science_2 = ["Algorithmen und Datenstrukturen", "Interaktive Systeme", "Programmierung 1", "Betriebssysteme/Webcomputing", "Mathematik 2", "Formale Sprachen und Automatentheorie"]
+ba_applied_computer_science_3 = ["Grundlagen der Sicherheit", "Datenbanken", "Programmierung 2", "Betriebssysteme/Rechnernetze", "Mathematik 3", "Einführung in das wissenschaftliche Schreiben", "Wahlpflichtmodul"]
+ba_applied_computer_science_4 = ["Software Engineering", "Grundlagen der künstlichen Intelligenz", "Programmierung 3", "Komplexpraktikum", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ba_applied_computer_science_5 = ["verpflichtendes Auslandssemester"]
+ba_applied_computer_science_6 = ["Betreutes Praxisprojekt", "Praxisseminar", "Bachlorseminar", "Bachlorarbeit mit Kolloquium"]
 
+ba_augenoptik_1 = ["Praktische Einführung in den Ingenieurberuf", "Angewandte Mathematik 1", "Experimentalphysik 1", "Werkstoffkunde", "Subjektive Refraktionsbestimmung 1", "Anatomie und Physiologie"]
+ba_augenoptik_2 = ["Technische Optik", "Angewandte Mathematik 2", "Experimentalphysik 2", "Pathologie", "Subjektive Refraktionsbestimmung 2", "Kontaktlinsenanpassung 1"]
+ba_augenoptik_3 = ["Optische Gerätetechnik", "Einführung in die Konstruktionslehre", "Einführung in die Elektrotechnik", "Optometrisches Screening 1", "Subjektive Refraktionsbestimmung 3", "Kontaktlinsenanpassung 2"]
+ba_augenoptik_4 = ["Opthalmotechnik", "Messtechnik und Sensorik", "Einführung in die Elektronik", "Informatik 1", "Subjektive Refraktionsbestimmung 4", "Kontaktlinsenanpassung 3"]
+ba_augenoptik_5 = ["Optikentwicklung", "Optometrisches Screening 2", "Optik & Technologie der Sehhilfen", "Kontaktlinsenanpassung 4", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ba_augenoptik_6 = ["Optikfertigung", "Wissenschaftliches Arbeiten", "Studium Generale", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ba_augenoptik_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
+
+ba_betriebswirtschaftslehre_1 = ["Buchführung", "Wirtschaftsenglisch", "Wirtschaftsrecht", "Volkswirtschaftslehre 1", "Grundlagen unternehmerischen Handelns", "Mathematik/Statistik 1"]
+ba_betriebswirtschaftslehre_2 = ["Externes Rechnungswesen und Bilanzen", "Internes Rechnungswesen", "Studium Generale 1", "Volkswirtschaftslehre 2", "Personal und Organisation", "Mathematik/Statistik 2"]
+ba_betriebswirtschaftslehre_3 = ["Controlling und Risikomanagement", "Produktions- und Materialwirtschaft", "Marketing", "Finanzierung und Investition", "Projektmanagement", "Wirtschaftsinformatik 1"]
+ba_betriebswirtschaftslehre_4 = ["Wahlpflichtmodul BWL", "Wahlpflichtmodul BWL", "Wahlpflichtmodul BWL", "Wahlpflichtmodul VWL/WI", "Business Plan", "Wirtschaftsinformatik 2"]
+ba_betriebswirtschaftslehre_5 = ["Wahlpflichtmodul BWL", "Wahlpflichtmodul BWL", "Wahlpflichtmodul BWL", "Wahlpflichtmodul VWL/WI", "Studium Generale 2", "Gründungsmanagement und Nachfolge"]
+ba_betriebswirtschaftslehre_6 = ["Betreutes Praxisprojekt mit Praxisarbeit und Praxisseminar", "Bachelor-Arbeit mit Kolloquium und Bachelor-Seminar"]
+
+ba_elektromobilitaet_1 = ["Chemie und Werkstoffe", "Elektrotechnik 1", "Fertigungstechnik 1", "Informatik 1", "Ingenieurmathematik 1", "Konstruktion 1"]
+ba_elektromobilitaet_2 = ["Analoge Schaltungen 1", "Elektrotechnik 2", "Technische Mechanik 1", "Informatik 2", "Ingenieurmathematik 2", "Konstruktion 2"]
+ba_elektromobilitaet_3 = ["Analoge Schaltungen 2", "Elektrotechnik 3", "Antriebstechnik", "Regel- und Steuerungstechnik", "Ingenieurmathematik 3", "Technische Mechanik 2"]
+ba_elektromobilitaet_4 = ["Elektrische Maschinen", "Grundlagen der Mikrocontrollertechnik", "Leistungselektronik", "Logistik", "Technische Sensorik", "Technisches Wahlpflichtmodul"]
+ba_elektromobilitaet_5 = ["Elektrische Antriebstechnik", "Interdisziplinäres Projekt 1", "Maschinenelemente 1", "Mobile Energiespeicher", "Technische Mechanik 3", "Technisches Wahlpflichtmodul"]
+ba_elektromobilitaet_6 = ["Mechanische Antriebe", "Interdisziplinäres Projekt 2", "Maschinenelemente 2", "Studium Generale", "Nichttechnisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_elektromobilitaet_7 = ["Bachelorarbeit", "Bachelorkolloquium", "Betreute Praxisphase"]
+
+ba_informatik_1 = ["Einführung in die Informationsverarbeitung", "Einführung in die Praktische Informatik", "Rechnerorganisation", "Mediengestaltung", "Mathematik 1", "Englisch", "Projektorientiertes Studium"]
+ba_informatik_2 = ["Algorithmen und Datenstrukturen", "Interaktive Systeme", "Programmierung 1", "Betriebssysteme/Webcomputing", "Mathematik 2", "Formale Sprachen und Automatentheorie"]
+ba_informatik_3 = ["Grundlagen der Sicherheit", "Datenbanken", "Programmierung 2", "Betriebssysteme/Rechnernetze", "Mathematik 3", "Einführung in das wissenschaftliche Schreiben", "Wahlpflichtmodul"]
+ba_informatik_4 = ["Software Engineering", "Grundlagen der künstlichen Intelligenz", "Programmierung 3", "Komplexpraktikum", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ba_informatik_5 = ["Projekt", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodule aus Studium Generale"]
+ba_informatik_6 = ["Betreutes Praxisprojekt", "Praxisseminar", "Bachlorseminar", "Bachlorarbeit mit Kolloquium"]
+
+ba_ingenieurinformatik_1 = ["Praktische Einführung in die Ingenieurinformatik", "Angewandte Mathematik 1", "Experimentalphysik 1", "Werkstoffkunde", "Einführung in die Elektrotechnik", "Einführung in die Konstruktionslehre"]
+ba_ingenieurinformatik_2 = ["Informatik 1", "Angewandte Mathematik 2", "Experimentalphysik 2", "Digitaltechnik", "Einführung in die Elektronik", "Messtechnik und Sensorik"]
+ba_ingenieurinformatik_3 = ["Informatik 2", "Angewandte Mathematik 3", "Datenbanksysteme", "Regelungs- und Steuerungstechnik", "Grundlagen der Mechatronik", "Technische Mechanik 1"]
+ba_ingenieurinformatik_4 = ["Eingebettete Systeme und Python", "Grundlagen der Mikrocontrollertechnik", "Signale und Systeme", "IT-Sicherheit und Datenschutz", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_ingenieurinformatik_5 = ["Applikationsenteicklung für Web und Mobile", "Digitale Bildverarbeitung", "Schaltungs- und Leiterplattenentwurf", "Nichttechnisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_ingenieurinformatik_6 = ["Künstliche Intelligenz", "Interdisziplinäres Projekt", "Studium Generale", "Nichttechnisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_ingenieurinformatik_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
+
+ba_ingenieurwissenschaften_1 = ["Grundlagen der Elektrotechnik 1", "Werkstoffkunde", "Einführung in die Konstruktionslehre", "Experimentalphysik 1", "Angewandte Mathematik 1", "Technische Mechanik 1"]
+ba_ingenieurwissenschaften_2 = ["Grundlagen der Elektrotechnik 2", "Grundlagen der Elektronik 1", "Messtechnik und Sensorik", "Experimentalphysik 2", "Angewandte Mathematik 2", "Informatik 1"]
+ba_ingenieurwissenschaften_3 = ["Grundlagen der Elektrotechnik 3", "Grundlagen der Elektronik 2", "Regelungs- und Steuerungstechnik", "Schaltungs- und Leiterplattenentwurf", "Angewandte Mathematik 3", "Informatik 2"]
+ba_ingenieurwissenschaften_4 = ["Elektrische Maschinen", "Leistungselektronik", "Signale und Systeme", "Digitaltechnik", "Automatisieren mit SPS", "Grundlagen der Mikrocontrollertechnik"]
+ba_ingenieurwissenschaften_5 = ["Elektrische Antriebe", "Optische Kommunikationstechnik", "Grundlagen der Mechatronik", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Nichttechnisches Wahlpflichtmodul"]
+ba_ingenieurwissenschaften_6 = ["Simulations- und Regelungstechnik", "Systemdynamik für Mechatronik", "InterdisziplinÃ¤res Projekt", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Nichttechnisches Wahlpflichtmodul"]
+ba_ingenieurwissenschaften_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
+
+ba_it_sicherheit_1 = ["Grundlagen der Mathematik", "Grundlagen der Programmierung 1", "Einführung in die Informatik", "Digitaler Selbstschutz", "Computerarchitektur und Betriebssysteme", "Kommunikation, Führung und Selbstmanagement"]
+ba_it_sicherheit_2 = ["Grundlagen der Kryptographie", "Grundlagen der Programmierung 2", "Theoretische Informatik", "Grundlagen der IT-Sicherheit", "Rechnernetze Grundlagen", "English for Computer Scientists"]
+ba_it_sicherheit_3 = ["Datenbanken", "Algorithmen und Datenstrukturen", "Angewandte Kryptographie", "Internet-Technologie", "Netzwerksicherheit", "Sicherheitsmanagement"]
+ba_it_sicherheit_4 = ["Softwaretechnik", "Entwicklung sicherer Softwaresysteme", "Hardware-Sicherheit", "IT-Forensik", "Einführung in wissenschaftliche Projektarbeit", "Ethik in der IT-Sicherheit"]
+ba_it_sicherheit_5 = ["Praxisprojekt", "IT-Recht", "Wahlpflichtfach", "Wahlpflichtfach"]
+ba_it_sicherheit_6 = ["Betriebswirtschaftslehre", "Wahlpflichtfach", "Wahlpflichtfach", "Bachelor-Seminar/Kolloquium", "Bachelor-Arbeit"]
+
+ba_maschinenbau_1 = ["Praktische Einführung in den Ingenieurberuf", "Werkstoffkunde", "Einführung in die Konstruktionslehre", "Experimentalphysik 1", "Angewandte Mathematik 1", "Technische Mechanik 1"]
+ba_maschinenbau_2 = ["Thermodynamik", "Werkstoffkunde 2", "Erweiterte Konstruktionslehre", "Informatik 1", "Angewandte Mathematik 2", "Technische Mechanik 2"]
+ba_maschinenbau_3 = ["Fertigungstechnik 1", "Maschinenelemente 1", "Einführung in die Elektrotechnik", "Wärme- und Stoffübertragung", "Angewandte Mathematik 3", "Technische Mechanik 3"]
+ba_maschinenbau_4 = ["Fertigungstechnik 2", "Maschinenelemente 2", "Einführung in die Elektronik", "Messtechnik und Sensorik", "Finite Elemente Methode", "Strömungslehre"]
+ba_maschinenbau_5 = ["Antriebstechnik", "Betriebswirtschaftslehre 1", "Regelungs- und Steuerungstechnik", "Kreislaufwirtschaft und Recycling-Technologien", "Technisches Wahlpflichtmodul", "Freies Wahlpflichtmodul"]
+ba_maschinenbau_6 = ["Interdisziplinäres Projekt", "Automatisierungstechnik", "Wissenschaftliches Arbeiten", "Technisches Wahlpflichtmodul", "Freies Wahlpflichtmodul", "Studium Generale"]
+ba_maschinenbau_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
+
+ba_medieninformatik_1 = ["Grundlagen der Mathematik", "Grundlagen der Programmierung 1", "Einführung in die Informatik", "Mediendesign 1", "Computerarchitektur und Betriebssysteme", "Kommunikation, Führung und Selbstmanagement"]
+ba_medieninformatik_2 = ["Relationen und Funktionen", "Grundlagen der Programmierung 2", "Theoretische Informatik", "Mediendesign 2", "Rechnernetze Grundlagen", "Mensch-Computer-Interaktionen"]
+ba_medieninformatik_3 = ["Datenbanken", "Algorithmen und Datenstrukturen", "Web-Programmierung", "Computergrafik", "Multimediatechnik", "Projektmanagement"]
+ba_medieninformatik_4 = ["Softwaretechnik", "Internetserver-Programmierung", "Internet Anwendungen für mobile Geräte", "IT-Recht", "Einführung in wissenschaftliche Projektarbeit", "Grundlagen der IT-Sicherheit"]
+ba_medieninformatik_5 = ["Praxisprojekt", "Pattern and Frameworks", "Wahlpflichtfach", "Wahlpflichtfach"]
+ba_medieninformatik_6 = ["Betriebswirtschaftslehre", "Wahlpflichtfach", "Wahlpflichtfach", "Bachelor-Seminar/Kolloquium", "Bachelor-Arbeit"]
+
+ba_medizininformatik_1 = ["Mathematik 1", "Einführung in die Praktische Informatik", "Einführung in die Informationsverarbeitung", "Medizin 1", "Englisch", "Projektorientiertes Studium"]
+ba_medizininformatik_2 = ["Mathematik 2", "Programmierung 1", "Algorithmen und Datenstrukturen", "Medizin 2", "Betriebssysteme/Webcomputing", "Grundlagen der Medizininformatik"]
+ba_medizininformatik_3 = ["Datenbanken", "Programmierung 2", "Digitales Gesundheitssystem", "Biometrie und Statistik", "Betriebssysteme/Rechnernetze", "Grundlagen der Sicherheit", "Einführung in das wissenschaftliche Schreiben"]
+ba_medizininformatik_4 = ["Software Engineering", "Software-Bewertung und -Auswahl", "Interoperabilität im Gesundheitswesen", "Grundlagen der Künstlichen Intelligenz", "Komplexpraktikum", "Wahlpflichtmodul"]
+ba_medizininformatik_5 = ["Medizinische Prozesse und IT-Systeme", "Projekt", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodule aus dem Studium Generale"]
+ba_medizininformatik_6 = ["Praxisprojekt", "Praxisseminar", "Bachelorseminar", "Bachelorarbeit mit Kolloquium"]
+
+ba_wirtschaftsinformatik_1 = ["Grundlagen der Wirtschafts- und Finanzmathematik", "Grundlagen der Wirtschaftswissenschaften", "Algorithmen und Datenstrukturen", "Grundlagen und Wirkung der Wirtschaftsinformatik", "Betriebssysteme und Netzwerke", "Projektstudium und Wissenschaftliches Arbeiten"]
+ba_wirtschaftsinformatik_2 = ["Grundlagen der Prozessmodellierung", "Grundlagen statistischer Methoden", "Objektorientierter Systementwurf", "Englisch anwenden in der Wirtschaftsinformatik", "Rechnungswesen und Controlling", "Datenbanken - Modellierung und Strukturierung"]
+ba_wirtschaftsinformatik_3 = ["Systemanalyse", "Softwareengineering", "Datenbanken - Anwendung und Entwicklung", "Usability & Software-Ergonomie", "Businessplan-Wettbewerb", "Projektmanagement und soziale Kompetenzen"]
+ba_wirtschaftsinformatik_4 = ["Systemarchitekturen und -integration", "Auswahl und Anpassung von IT-Diensten", "Management und Organisation", "DV-orientiertes Wirtschaftsrecht", "Predictive Analysis and Big Data", "Wahlpflichtmodul"]
+ba_wirtschaftsinformatik_5 = ["Informationsmanagement", "Produktion, Logistik und Vertrieb", "Datenschutz und Sicherheit", "Studium Generale: Forschungsansätze in der WI", "Wahlpflichtmodul", "Wahlpflichtmodul Wirtschaft"]
+ba_wirtschaftsinformatik_6 = ["Betreutes Praxisprojekt", "Praxisseminar", "Bachelorseminar", "Bachelorarbeit (mit Kolloquium)"]
+
+ba_wirtschaftsingenieurwesen_1 = ["Grundlagen der Elektrotechnik 1", "Praktische Einführung in den Ingenieurberuf", "Betriebswirtschaftslehre 1", "Experimentalphysik 1", "Angewandte Mathematik 1", "Rechnungswesen 1"]
+ba_wirtschaftsingenieurwesen_2 = ["Grundlagen der Elektrotechnik 2", "Betriebswirtschaftslehre 2", "Rechnungswesen 2", "Experimentalphysik 2", "Angewandte Mathematik 2", "Informatik 1"]
+ba_wirtschaftsingenieurwesen_3 = ["Werkstoffkunde", "Technische Mechanik 1", "Betriebswirtschaftslehre 3", "Einführung in die Konstruktionslehre", "Angewandte Mathematik 3", "Projektmanagement"]
+ba_wirtschaftsingenieurwesen_4 = ["Betriebswirtschaftslehre 4", "Messtechnik und Sensorik", "Wirtschaftsrecht", "Volkswirtschaftslehre", "Betriebswirtschaftliches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_wirtschaftsingenieurwesen_5 = ["ERP für Wirtschaftsingenieure", "Statistische Methoden", "Informatik 2", "Betriebswirtschaftliches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul"]
+ba_wirtschaftsingenieurwesen_6 = ["Wissenschaftliches Arbeiten", "Interdisziplinäres Projekt", "Betriebswirtschaftliches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Studium Generale (Wahlpflichtmodul)"]
+ba_wirtschaftsingenieurwesen_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
+
+studiengaenge = {
+    "Informatik": {
+        "1": ba_informatik_1,
+        "2": ba_informatik_2,
+        "3": ba_informatik_3,
+        "4": ba_informatik_4,
+        "5": ba_informatik_5,
+        "6": ba_informatik_6
+    },
+
+    "Augenoptik": {
+        "1": ba_augenoptik_1,
+        "2": ba_augenoptik_2,
+        "3": ba_augenoptik_3,
+        "4": ba_augenoptik_4,
+        "5": ba_augenoptik_5,
+        "6": ba_augenoptik_6,
+        "7": ba_augenoptik_7
+    },
+
+    "Medieninformatik": {
+        "1": ba_medieninformatik_1,
+        "2": ba_medieninformatik_2,
+        "3": ba_medieninformatik_3,
+        "4": ba_medieninformatik_4,
+        "5": ba_medieninformatik_5,
+        "6": ba_medieninformatik_6
+    }
+}
 
 form = cgi.FieldStorage()
 matrikelnummer = form.getvalue("Matrikelnummer")
 studiengang = form.getvalue("Studiengang")
 semester = form.getvalue("Semester")
 studienart = form.getvalue("Studienart")
+
+
+module = []
+
+if studienart == "Bachelor":
+    if studiengang in studiengaenge:
+        if semester in studiengaenge[studiengang]:
+            module = studiengaenge[studiengang][semester]
+
+module_html = ""
+
+for modul in module:
+    module_html += f"""
+    <li class="list-group-item">
+        {modul}
+    </li>
+    """
+
 
 print("Content-type: text/html")
 print()
@@ -59,12 +202,8 @@ print(f"""
             </ul>
 	</div>
 
-<ul class="list-group list-group-horizontal-xl flex-fill">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
- <li class="list-group-item">Morbi leo risus</li>
- <li class="list-group-item">Morbi leo risus</li>
+<ul class="list-group mt-4">
+    {module_html}
 </ul>
     </div>
 </div>
