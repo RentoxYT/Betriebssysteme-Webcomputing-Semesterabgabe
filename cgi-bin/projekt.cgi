@@ -99,13 +99,14 @@ ba_wirtschaftsingenieurwesen_6 = ["Wissenschaftliches Arbeiten", "Interdisziplin
 ba_wirtschaftsingenieurwesen_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
 
 studiengaenge = {
-    "Informatik": {
-        "1": ba_informatik_1,
-        "2": ba_informatik_2,
-        "3": ba_informatik_3,
-        "4": ba_informatik_4,
-        "5": ba_informatik_5,
-        "6": ba_informatik_6
+
+    "Applied Computer Science": {
+        "1": ba_applied_computer_science_1,
+        "2": ba_applied_computer_science_2,
+        "3": ba_applied_computer_science_3,
+        "4": ba_applied_computer_science_4,
+        "5": ba_applied_computer_science_5,
+        "6": ba_applied_computer_science_6
     },
 
     "Augenoptik": {
@@ -118,6 +119,73 @@ studiengaenge = {
         "7": ba_augenoptik_7
     },
 
+    "Betriebswirtschaftslehre": {
+        "1": ba_betriebswirtschaftslehre_1,
+        "2": ba_betriebswirtschaftslehre_2,
+        "3": ba_betriebswirtschaftslehre_3,
+        "4": ba_betriebswirtschaftslehre_4,
+        "5": ba_betriebswirtschaftslehre_5,
+        "6": ba_betriebswirtschaftslehre_6
+    },
+
+    "Elektromobilität": {
+        "1": ba_elektromobilitaet_1,
+        "2": ba_elektromobilitaet_2,
+        "3": ba_elektromobilitaet_3,
+        "4": ba_elektromobilitaet_4,
+        "5": ba_elektromobilitaet_5,
+        "6": ba_elektromobilitaet_6,
+        "7": ba_elektromobilitaet_7
+    },
+
+    "Informatik": {
+        "1": ba_informatik_1,
+        "2": ba_informatik_2,
+        "3": ba_informatik_3,
+        "4": ba_informatik_4,
+        "5": ba_informatik_5,
+        "6": ba_informatik_6
+    },
+
+    "Ingenieurinformatik": {
+        "1": ba_ingenieurinformatik_1,
+        "2": ba_ingenieurinformatik_2,
+        "3": ba_ingenieurinformatik_3,
+        "4": ba_ingenieurinformatik_4,
+        "5": ba_ingenieurinformatik_5,
+        "6": ba_ingenieurinformatik_6,
+        "7": ba_ingenieurinformatik_7
+    },
+
+    "Ingenieurwissenschaften": {
+        "1": ba_ingenieurwissenschaften_1,
+        "2": ba_ingenieurwissenschaften_2,
+        "3": ba_ingenieurwissenschaften_3,
+        "4": ba_ingenieurwissenschaften_4,
+        "5": ba_ingenieurwissenschaften_5,
+        "6": ba_ingenieurwissenschaften_6,
+        "7": ba_ingenieurwissenschaften_7
+    },
+
+    "IT-Sicherheit": {
+        "1": ba_it_sicherheit_1,
+        "2": ba_it_sicherheit_2,
+        "3": ba_it_sicherheit_3,
+        "4": ba_it_sicherheit_4,
+        "5": ba_it_sicherheit_5,
+        "6": ba_it_sicherheit_6
+    },
+
+    "Maschinenbau": {
+        "1": ba_maschinenbau_1,
+        "2": ba_maschinenbau_2,
+        "3": ba_maschinenbau_3,
+        "4": ba_maschinenbau_4,
+        "5": ba_maschinenbau_5,
+        "6": ba_maschinenbau_6,
+        "7": ba_maschinenbau_7
+    },
+
     "Medieninformatik": {
         "1": ba_medieninformatik_1,
         "2": ba_medieninformatik_2,
@@ -125,7 +193,36 @@ studiengaenge = {
         "4": ba_medieninformatik_4,
         "5": ba_medieninformatik_5,
         "6": ba_medieninformatik_6
+    },
+
+    "Medizininformatik": {
+        "1": ba_medizininformatik_1,
+        "2": ba_medizininformatik_2,
+        "3": ba_medizininformatik_3,
+        "4": ba_medizininformatik_4,
+        "5": ba_medizininformatik_5,
+        "6": ba_medizininformatik_6
+    },
+
+    "Wirtschaftsinformatik": {
+        "1": ba_wirtschaftsinformatik_1,
+        "2": ba_wirtschaftsinformatik_2,
+        "3": ba_wirtschaftsinformatik_3,
+        "4": ba_wirtschaftsinformatik_4,
+        "5": ba_wirtschaftsinformatik_5,
+        "6": ba_wirtschaftsinformatik_6
+    },
+
+    "Wirtschaftsingenieurwesen": {
+        "1": ba_wirtschaftsingenieurwesen_1,
+        "2": ba_wirtschaftsingenieurwesen_2,
+        "3": ba_wirtschaftsingenieurwesen_3,
+        "4": ba_wirtschaftsingenieurwesen_4,
+        "5": ba_wirtschaftsingenieurwesen_5,
+        "6": ba_wirtschaftsingenieurwesen_6,
+        "7": ba_wirtschaftsingenieurwesen_7
     }
+
 }
 
 form = cgi.FieldStorage()
