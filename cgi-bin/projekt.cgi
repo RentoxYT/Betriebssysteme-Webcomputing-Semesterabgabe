@@ -306,9 +306,17 @@ print(f"""
             </ul>
 	</div>
 
-<ul class="list-group mt-4">
-    {module_html}
-</ul>
+<div class="card p-4 shadow mt-4">
+
+    <h2 class="text-center mb-4">
+        Module dieses Semester
+    </h2>
+
+    <ul class="list-group">
+        {module_html}
+    </ul>
+
+</div>
     </div>
 </div>
 <footer class="bg-body-tertiary text-center mt-auto">
