@@ -443,7 +443,11 @@ print(f"""
     <ul class="list-group">
         {module_html}
     </ul>
-
+     <div class="text-center mt-4">
+        <a href="../Betriebssysteme-Webcomputing-Semesterabgabe/index.html" class="btn btn-primary">
+            Zurück zur Auswahl
+        </a>
+    </div>
 </div>
     </div>
 </div>
