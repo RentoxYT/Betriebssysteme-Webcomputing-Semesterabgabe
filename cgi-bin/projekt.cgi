@@ -98,6 +98,58 @@ ba_wirtschaftsingenieurwesen_5 = ["ERP für Wirtschaftsingenieure", "Statistisch
 ba_wirtschaftsingenieurwesen_6 = ["Wissenschaftliches Arbeiten", "Interdisziplinäres Projekt", "Betriebswirtschaftliches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Technisches Wahlpflichtmodul", "Studium Generale (Wahlpflichtmodul)"]
 ba_wirtschaftsingenieurwesen_7 = ["Praxisphase", "Bachelorarbeit", "Bachelorkolloquium"]
 
+ma_betriebswirtschaftslehre_1 = ["International Financial Reporting Standards (IFRS)", "Quantitative Tools - Applied Econometrics", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_betriebswirtschaftslehre_2 = ["Strategisches Management & Marketing", "Global Economics", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_betriebswirtschaftslehre_3 = ["Auslandssemester oder Inlandssemester (BWL-Projekt und 3 Wahlpflichtmodule)"]
+ma_betriebswirtschaftslehre_4 = ["Integratives Projekt", "Masterarbeit mit Kolloquium und Master-Seminar"]
+
+ma_digitalisierung_und_management_1 = ["Innovationsmanagement", "Analyse und Modellierung von Prozessen", "Nachhaltigkeitsmanagement", "Dokumenten- und Workflowmanagement"]
+ma_digitalisierung_und_management_2 = ["Vertriebsmanagement", "Angewandte Data Analytics", "Compliance Management/Corporate Governance", "IT-Projektmanagement"]
+ma_digitalisierung_und_management_3 = ["Customer Relationship Management", "Enterprise Knowledge Engineering", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_digitalisierung_und_management_4 = ["Angewandtes Change Management", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_digitalisierung_und_management_5 = ["Masterseminar", "Masterarbeit", "Kolloquium"]
+
+ma_energieeffizienz_technischer_systeme_1 = ["Energie- und Ressourcenmanagement", "Mathematische Optimierung", "Energiespeicher", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_energieeffizienz_technischer_systeme_2 = ["Angewandte Multidisziplinäre Designoptimierung", "Sicherheit und Zuverlässigkeit", "Wissenschaftliche Projektarbeit", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_energieeffizienz_technischer_systeme_3 = ["Masterarbeit", "Kolloquium zur Masterarbeit"]
+
+ma_informatik_1 = ["Mathematik", "Softwarearchitektur und Qualitätssicherung", "Fortgeschrittenes Projektmanagement", "Projekt 1", "Vertiefungsmodul 1", "Wahlpflichtmodul"]
+ma_informatik_2 = ["Künstliche Intelligenz", "Datenbanken und Informationssysteme", "Wissenschaftliches Arbeiten: Recherchieren, Schreiben, Präsentieren", "Projekt 2", "Vertiefungsmodul 2", "Wahlpflichtmodul"]
+ma_informatik_3 = ["Informatiktheorie", "Entrepreneurship", "Projekt 3", "Vertiefungsmodul 3", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_informatik_4 = ["Masterseminar", "Masterarbeit (mit Kolloquium)"]
+
+ma_interactive_media_1 = ["Media theories", "Creative technologies", "Project Management", "Project I", "Elective", "Elective", "German course"]
+ma_interactive_media_2 = ["Media research", "Immersive media", "Mobile user experience", "Scientific writing", "Project II", "Elective", "German course"]
+ma_interactive_media_3 = ["Media communication", "Interface design", "Entrepreneurship", "Project III", "Elective", "Elective", "German course"]
+ma_interactive_media_4 = ["Master thesis with colloquium"]
+
+ma_mechanical_engineering_1 = ["Drive Dynamics and Simulation of Kinematic Systems", "Mathematical Optimization", "Energy and Resource Management", "Elective Module", "Elective Module"]
+ma_mechanical_engineering_2 = ["Material Selection and Design Optimization", "Development of Fault Tolerant Software for Embedded Realtime Systems", "Scientific Project", "Elective Module", "Elective Module"]
+ma_mechanical_engineering_3 = ["Master Thesis", "Master Colloquium"]
+
+ma_medieninformatik_1 = ["Informationsarchitektur", "User Experience", "Mediendidaktik und Konzeption", "Motion Design", "Moderne Softwareentwicklung", "Künstliche Intelligenz"]
+ma_medieninformatik_2 = ["Wahrscheinlichkeitsrechnung und Kryptographie", "Codierung multimedialer Daten", "Wissenschaftliches Seminar", "Wahlpflichtfach", "Wahlpflichtfach", "Wahlpflichtfach"]
+ma_medieninformatik_3 = ["Projekt- und Qualitätsmanagement", "Gründungsmanagement", "Wissenschaftliches Projekt", "Wahlpflichtfach", "Wahlpflichtfach", "Wahlpflichtfach"]
+ma_medieninformatik_4 = ["Masterseminar", "Masterarbeit und Kolloquium"]
+
+ma_photonik_1 = ["Messtechnik und Instrumentierung", "Mathematische Methoden", "Mikrotechnologien", "Struktur der Materie", "Technische Optik 1", "Theoretische Grundlagen der Photonik 1"]
+ma_photonik_2 = ["Forschungs- und Entwicklungsprojekt 1", "Lasertechnik", "Optische Mess- und Analseverfahren", "Technische Optik 2", "Wahlpflichtmodul"]
+ma_photonik_3 = ["Forschungs- und Entwicklungsprojekt 2", "Lasermaterialbearbeitung", "Angewandte Photonik", "Management", "Theoretische Grundlagen der Photonik 2", "Wahlpflichtmodul"]
+ma_photonik_4 = ["Masterarbeit"]
+
+ma_security_management_1 = ["Grundlagen des Security Managements", "Recht, Compliance und Datenschutz", "Netzwerksicherheit", "Mathematische und technische Grundlagen der IT-Sicherheit", "Sichere IKT-Infrastrukturen und IT-Dienste 1", "Wissenschaftliches Schreiben 1"]
+ma_security_management_2 = ["Security- und Krisenmanagement im internationalen Kontext", "Organisatorische Aspekte des Sicherheitsmanagements", "Sichere IKT-Infrastrukturen und IT-Dienste 2", "Secure System Lifecycle Management", "Wissenschaftliches Schreiben 1", "Projekt"]
+ma_security_management_3 = ["Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul", "Masterarbeit (mit Kolloquium)"]
+
+ma_technologie_und_innovationsmanagement_und_entrepreneurship_1 = ["BWL-Management & Businessplan", "Technologiemanagement", "Innovationsmanagement", "Lab 1: Technologie-Vorausschau", "Produktkalkulation & FuE-Controlling"]
+ma_technologie_und_innovationsmanagement_und_entrepreneurship_2 = ["VWL-Technologiepolitik", "Innovation Intelligence/Innovationsmarktforschung", "Gründungsmanagement & Entreneurial Marketing", "Lab 2: Produktplanung und Konzeptentwicklung", "Personalführung und Teammanagement"]
+ma_technologie_und_innovationsmanagement_und_entrepreneurship_3 = ["Integratives Projekt", "Masterseminar", "Masterarbeit und Kolloquium"]
+
+ma_wirtschaftsinformatik_1 = ["Unternehmensführung", "Wertorientiertes IT-Management", "Theorie der Informatik", "Advanced Software Engineering", "Modellierung und Analyse von Prozessen"]
+ma_wirtschaftsinformatik_2 = ["Security Management", "Management Kooperativer Prozesse", "Implementierung von Prozessen", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_wirtschaftsinformatik_3 = ["IT-Recht", "eCommerce", "Wahlpflichtmodul", "Wahlpflichtmodul", "Wahlpflichtmodul"]
+ma_wirtschaftsinformatik_4 = ["Masterseminar", "Masterarbeit (mit Kolloquium)"]
+
 studiengaenge = {
 
     "Applied Computer Science": {
@@ -225,6 +277,76 @@ studiengaenge = {
 
 }
 
+master_studiengaenge = {
+
+    "Digitalisierung und Management": {
+        "1": ma_digitalisierung_und_management_1,
+        "2": ma_digitalisierung_und_management_2,
+        "3": ma_digitalisierung_und_management_3,
+        "4": ma_digitalisierung_und_management_4,
+        "5": ma_digitalisierung_und_management_5
+    },
+
+    "Energieeffizienz technischer Systeme": {
+        "1": ma_energieeffizienz_technischer_systeme_1,
+        "2": ma_energieeffizienz_technischer_systeme_2,
+        "3": ma_energieeffizienz_technischer_systeme_3
+    },
+
+    "Informatik": {
+        "1": ma_informatik_1,
+        "2": ma_informatik_2,
+        "3": ma_informatik_3,
+        "4": ma_informatik_4
+    },
+
+    "Interactive Media": {
+        "1": ma_interactive_media_1,
+        "2": ma_interactive_media_2,
+        "3": ma_interactive_media_3,
+        "4": ma_interactive_media_4
+    },
+
+    "Mechanical Engineering": {
+        "1": ma_mechanical_engineering_1,
+        "2": ma_mechanical_engineering_2,
+        "3": ma_mechanical_engineering_3
+    },
+
+    "Medieninformatik": {
+        "1": ma_medieninformatik_1,
+        "2": ma_medieninformatik_2,
+        "3": ma_medieninformatik_3,
+        "4": ma_medieninformatik_4
+    },
+
+    "Photonik": {
+        "1": ma_photonik_1,
+        "2": ma_photonik_2,
+        "3": ma_photonik_3,
+        "4": ma_photonik_4
+    },
+
+    "Security Management": {
+        "1": ma_security_management_1,
+        "2": ma_security_management_2,
+        "3": ma_security_management_3
+    },
+
+    "Technologie- und Innovationsmanagement und Entrepreneurship": {
+        "1": ma_technologie_und_innovationsmanagement_und_entrepreneurship_1,
+        "2": ma_technologie_und_innovationsmanagement_und_entrepreneurship_2,
+        "3": ma_technologie_und_innovationsmanagement_und_entrepreneurship_3
+    },
+
+    "Wirtschaftsinformatik": {
+        "1": ma_wirtschaftsinformatik_1,
+        "2": ma_wirtschaftsinformatik_2,
+        "3": ma_wirtschaftsinformatik_3,
+        "4": ma_wirtschaftsinformatik_4
+    }
+}
+
 form = cgi.FieldStorage()
 matrikelnummer = form.getvalue("Matrikelnummer")
 studiengang = form.getvalue("Studiengang")
@@ -238,6 +360,12 @@ if studienart == "Bachelor":
     if studiengang in studiengaenge:
         if semester in studiengaenge[studiengang]:
             module = studiengaenge[studiengang][semester]
+
+elif studienart == "Master":
+
+    if studiengang in master_studiengaenge:
+        if semester in master_studiengaenge[studiengang]:
+            module = master_studiengaenge[studiengang][semester]
 
 module_html = ""
 
