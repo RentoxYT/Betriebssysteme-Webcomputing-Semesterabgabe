@@ -8,6 +8,8 @@ Im Rahmen unseres Projekts haben wir eine Website entwickelt, die Studierenden d
 
 Ziel unseres Projekts war es, den oft komplizierten Überblick über Studienverlaufspläne und Modulhandbücher zu vereinfachen. Durch die automatische Zuordnung der Module erhalten Studierende schnell und übersichtlich die Informationen, die sie für ihre Semesterplanung benötigen.
 
+Eingabeparameter: Matrikelnummer, Studiengang, Semester, Studienart
+
 Link Website: http://pan.th-brandenburg.de/~sohnrey/Betriebssysteme-Webcomputing-Semesterabgabe/index.html
 
 Link GitHub: https://github.com/RentoxYT/Betriebssysteme-Webcomputing-Semesterabgabe
